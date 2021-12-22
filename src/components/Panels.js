@@ -7,11 +7,13 @@ const path = process.env.PUBLIC_URL;
 
 function Panels(){
   let [names, setNames] = useState(arr); 
+  
 
   return (    
     <>     
       <section>
       {
+        
         names.map((data,index)=>{
           let style = {transform: `rotate(${deg*index}deg) translateY(-100vh)`}
           let imgSrc = `${path}/img/${data}.jpg`;

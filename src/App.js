@@ -2,24 +2,9 @@ import './css/style.css';
 import {Logo, Menu} from './components/Header.js';
 import Footer from './components/Footer.js';
 import Panels from './components/Panels.js';
-import { useState } from 'react';
+import Btns from './components/Btns.js';
 
-const deg = 45;
-
-function App() {
-  let [num, setNum] = useState(0);
-
-  function plus(e){    
-    setNum(++num);
-    const frame = e.currentTarget.closest("figure").querySelector("section");
-    frame.style.transform = `rotate(${45*num}deg)`;
-  }
-
-  function minus(e){
-    setNum(--num);
-    const frame = e.currentTarget.closest("figure").querySelector("section");
-    frame.style.transform = `rotate(${45*num}deg)`;
-  }
+function App() { 
 
   return (
     <div className="App">
@@ -28,9 +13,7 @@ function App() {
         <Menu />
 
         <Panels />
-
-        <div className="btnPrev" onClick={e=> plus(e)}>PREV</div>
-        <div className="btnNext" onClick={e=> minus(e)}>NEXT</div>
+        <Btns />
 
         <Footer />
       </figure>
