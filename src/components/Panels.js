@@ -5,11 +5,8 @@ const len = arr.length;
 const deg = 360/len;
 const path = process.env.PUBLIC_URL;
 
-
 function Panels(){
-
-  let [names, setNames] = useState(arr);
-  
+  let [names, setNames] = useState(arr); 
 
   return (    
     <>     
