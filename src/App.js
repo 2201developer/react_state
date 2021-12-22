@@ -4,7 +4,6 @@ import Footer from './components/Footer.js';
 import Panels from './components/Panels.js';
 
 
-
 function App() {
   return (
     <div className="App">
@@ -13,6 +12,9 @@ function App() {
         <Menu />
 
         <Panels />
+
+        <div className="btnPrev">PREV</div>
+        <div className="btnNext">NEXT</div>
 
         <Footer />
       </figure>

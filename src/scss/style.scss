@@ -6,9 +6,8 @@ figure {
   position: relative; overflow: hidden;
 
   @import "header";
-
   @import "panel";
-
+  @import "btns";
   @import "footer";
   
 }
